@@ -14,10 +14,7 @@ public class MainMenuController : MonoBehaviour
     {
         InitMvc();
         InitButtons();
-        UpdateCurrency();
-        UpdateInventory();
-        
-
+        UpdateUI();
         
         GameController.current.OnBuy.AddListener(UpdateUI);
         GameController.current.OnConvertCoinToCredit.AddListener(UpdateCurrency);
